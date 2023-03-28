@@ -390,3 +390,43 @@ img {
     border-radius: 50%;
     background-color: #F4F0EC;
 }
+
+/* Statistics Section */
+.stats-section {
+    height: 475px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: #F4F0EC;
+}
+
+.stats-list {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.stats-item:not(:last-child) {
+    /* padding-right: 100px; */
+    border: 1px solid #CDA274;
+
+    /* background-color: #CDA274; */
+    
+}
+
+.stats-title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 128px;
+    text-align: center;
+    letter-spacing: 1.7px;
+    color: #CDA274;
+}
+
+.stats-text {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
