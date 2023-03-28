@@ -307,9 +307,86 @@ img {
 }
 
 .feedback-text {
-    width: 244px;
+    width: 274px;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.22px;
 }
 
+/* Brand Section */
+.brand-section {
+    margin-bottom: 100px;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-bottom: 80px;
+}
+
+.projects-title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.22px;  
+    color: #292F36;
+    margin-bottom: 20px;
+}
+
+.projects-text {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.22px;
+    margin-bottom: 70px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+}
+
+.projects-item {
+    flex-basis: calc((100% - 20px) / 2);
+}
+
+.projects-item-title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.56;
+    letter-spacing: 0.22px; 
+    color: #292F36;
+    margin-top: 24px;
+}
+
+.projects-item-text {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
+
+.projects-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.projects-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+}
