@@ -407,7 +407,7 @@ img {
 
 .stats-item:not(:last-child) {
     /* padding-right: 100px; */
-    border: 1px solid #CDA274;
+    border-right: 1px solid #CDA274;
 
     /* background-color: #CDA274; */
     
