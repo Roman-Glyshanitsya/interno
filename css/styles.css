@@ -435,7 +435,9 @@ img {
 }
 
 /* Blogs Section */
-.blogs-section {}
+.blogs-section {
+    margin-bottom: 140px;
+}
 
 .blogs-title {
     font-family: 'DM Serif Display';
@@ -460,18 +462,102 @@ img {
 .blogs-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 40px 20px;
 }
 
 .blogs-item {
+    flex-basis: calc((100% - 40px) / 3);
     border: 1px solid #E7E7E7;
     border-radius: 62px;
-    padding: 21px 21px 40px 21px;
+    padding: 21px 20px 40px 20px;
 }
 
 .blogs-item-title {
     width: 334px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.4;   
+    letter-spacing: 0.5px; 
+    color: #292F36;
+    margin-bottom: 10px;
 }
 
-.blogs-item-date {}
+.blogs-item-date {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;  
+}
 
-.blogs-item-link {}
+.blogs-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogs-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+}
+
+/* Join Section */
+
+.join-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 414px;
+    border-radius: 70px;
+    background-color: #292F36;
+    margin-bottom: 80px;
+}
+
+.join-title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.22px; 
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.join-text {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.22px;  
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.join-btn {
+    width: 241px;
+    height: 71px;
+    /* background-image: url(../images/btn-2.jpg); */
+    background-color: #CDA274;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 18px;
+    padding: 21px 67px 23px 34px;
+    
+
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #FFFFFF;
+   
+    
+    cursor: pointer;
+}
+      
