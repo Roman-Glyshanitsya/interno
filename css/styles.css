@@ -216,7 +216,7 @@ img {
     letter-spacing: 0.22px;
 }
 
-.contact {
+.design-contact {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
@@ -541,14 +541,10 @@ img {
 .join-btn {
     width: 241px;
     height: 71px;
-    /* background-image: url(../images/btn-2.jpg); */
     background-color: #CDA274;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     border: none;
     border-radius: 18px;
-    padding: 21px 67px 23px 34px;
+    padding: 21px 34px 23px 34px;
     
 
     font-size: 18px;
@@ -560,4 +556,81 @@ img {
     
     cursor: pointer;
 }
-      
+
+/* =========== Footer =========== */
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.social-links {
+    margin-right: 84px;
+}
+
+.social-links-text {
+    width: 326px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.social-links-list {
+    display: flex;
+    align-items: center;
+}
+
+.social-links-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.pages {
+    width: 210px;
+}
+
+.footer-title {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    color: #292F36;
+    margin-bottom: 22px;
+}
+
+.footer-item {
+    line-height: 1.5;
+    letter-spacing: 0.22px;    
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.explore {
+    width: 210px;
+}
+
+.contact {
+    width: 321px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-copyright {
+    border-top: 1px solid #E5E5E5;
+}
+
+.footer-copyright-text {
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.22px;
+    padding: 35px 0;
+}
+
+.footer-copyright-span {   
+    color: #CDA274;
+}
+  
