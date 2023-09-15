@@ -113,7 +113,7 @@ img {
 .hero-button {
     width: 207px;
     height: 71px;
-    background-image: url(../images/btn.jpg);
+    background-image: url(../images/main-btns/btn.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -129,7 +129,7 @@ img {
     cursor: pointer;
 }
 
-/* Advantages */
+/* ============= Advantages ================= */
 .feature-section {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -180,11 +180,11 @@ img {
     width: 24px;
     height: 17px;
     margin-left: 6px;
-    background-image: url(../images/arrow.svg);
+    background-image: url(../images/icons/arrow.svg);
     background-size: contain;
 }
 
-/* Design */
+/* ================ Design ==================== */
 .design-section {
     margin-bottom: 140px;
     display: flex;
@@ -211,13 +211,30 @@ img {
     margin-bottom: 30px;
 }
 
+.design-phone-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 .design-phone-button {
     width: 93px;
     height: 93px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
     margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.design-phone {
+.design-phone-icon {
+    width: 34px;
+    height: 34px;
+}
+
+.design-phone-number {
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: 0.22px;
@@ -229,16 +246,10 @@ img {
     letter-spacing: 0.22px;
 }
 
-.design-contact {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
 .design-button {
     width: 263px;
     height: 71px;
-    background-image: url(../images/btn.jpg);
+    background-image: url(../images/main-btns/btn.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -404,6 +415,11 @@ img {
     background-color: #F4F0EC;
 }
 
+.projects-item-icon {
+    width: 20px;
+    height: 20px;
+}
+
 /* Statistics Section */
 .stats-section {
     height: 475px;
@@ -518,6 +534,11 @@ img {
     background-color: #F4F0EC;
 }
 
+.blogs-item-icon {
+    width: 15px;
+    height: 15px;
+}
+
 /* Join Section */
 
 .join-section {
@@ -554,18 +575,19 @@ img {
 .join-btn {
     width: 241px;
     height: 71px;
-    background-color: #CDA274;
+    background-image: url(../images/main-btns/join-btn.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border: none;
     border-radius: 18px;
-    padding: 21px 34px 23px 34px;
-
+    padding: 22px 67px 22px 34px;
 
     font-size: 18px;
     line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.22px;
+    letter-spacing: 0.72px;
     color: #FFFFFF;
-
 
     cursor: pointer;
 }
@@ -596,6 +618,12 @@ img {
 
 .social-links-item:not(:last-child) {
     margin-right: 40px;
+}
+
+.social-links-icon {
+    width: 25px;
+    height: 25px;
+    fill: #292F36;
 }
 
 .pages {
