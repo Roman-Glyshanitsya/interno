@@ -48,8 +48,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 26px;
-    margin-bottom: 18px;
+    padding-top: 26px;
+    padding-bottom: 18px;
 }
 
 .header-list {
