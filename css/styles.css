@@ -28,12 +28,14 @@ ul {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-    /* padding: 0 12px; */
+    padding: 0 10px;
 }
 
 /* ============= Header ================ */
@@ -379,6 +381,7 @@ img {
 }
 
 .projects-item {
+    width: 520px;
     flex-basis: calc((100% - 20px) / 2);
 }
 
