@@ -32,10 +32,6 @@ img {
     height: auto;
 }
 
-:root {
-    --animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -45,11 +41,23 @@ img {
 /* ============= Header ================ */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 26px;
-    padding-bottom: 18px;
+    min-height: 100px;
+}
+
+.header-logo-img {
+    width: 177px;
 }
 
 .header-list {
@@ -59,6 +67,7 @@ img {
 .header-list-item:not(:last-child) {
     margin-right: 40px;
 }
+
 
 .header-list-link {
     line-height: 1.58;
@@ -75,16 +84,20 @@ img {
     background: currentColor;
     transform: scale(0);
     transform-origin: center right;
-    transition: transform var(--animation);
+    transition: transform 300ms ease-in-out;
+}
+
+.header-list-link:hover {
+    color: #CDA274;
 }
 
 .header-list-link:hover:after {
     transform: scale(1.1);
     transform-origin: center left;
+
 }
 
 /* Main */
-
 .hero-section {
     height: 831px;
     max-width: 100%;
@@ -223,6 +236,16 @@ img {
     margin-bottom: 50px;
 }
 
+.design-phone-link:hover .design-phone-button {
+    transition: transform 500ms ease-in-out, background-color 400ms ease-in-out;
+    transform: rotate(90deg);
+    background-color: #CDA274;
+}
+
+.design-phone-link:hover .design-phone-icon {
+    fill: #F4F0EC;
+}
+
 .design-phone-button {
     width: 93px;
     height: 93px;
@@ -238,6 +261,7 @@ img {
 .design-phone-icon {
     width: 34px;
     height: 34px;
+    fill: #CDA274;
 }
 
 .design-phone-number {
@@ -271,7 +295,16 @@ img {
     cursor: pointer;
 }
 
-/* Feedback */
+.design-button:hover {
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.2);
+}
+
+.design-img {
+    width: 600px;
+}
+
+/*=========================== Feedback ===========================*/
 .feedback-section {
     width: 1200px;
     height: 675px;
@@ -343,7 +376,7 @@ img {
     letter-spacing: 0.22px;
 }
 
-/* Brand Section */
+/* ===================== Brand Section ======================*/
 .brand-section {
     margin-bottom: 100px;
 }
@@ -354,7 +387,7 @@ img {
     align-items: center;
 }
 
-/* Projects Section */
+/*======================= Projects Section =====================*/
 .projects-section {
     margin-bottom: 80px;
 }
@@ -422,12 +455,22 @@ img {
     background-color: #F4F0EC;
 }
 
+.projects-item-link:hover {
+    transition: background-color 400ms ease-in-out;
+    background-color: #CDA274;
+}
+
+.projects-item-link:hover .projects-item-icon {
+    transition: fill 400ms ease-in-out;
+    fill: #F4F0EC;
+}
+
 .projects-item-icon {
     width: 20px;
     height: 20px;
 }
 
-/* Statistics Section */
+/*======================= Statistics Section =======================*/
 .stats-section {
     height: 475px;
     padding-top: 140px;
@@ -470,7 +513,7 @@ img {
     color: #4D5053;
 }
 
-/* Blogs Section */
+/*====================== Blogs Section ===========================*/
 .blogs-section {
     margin-bottom: 140px;
 }
@@ -508,6 +551,11 @@ img {
     padding: 21px 20px 40px 20px;
 }
 
+.blogs-item:hover {
+    transition: box-shadow 400ms ease-in-out;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
 .blogs-item-title {
     width: 334px;
     font-family: 'DM Serif Display';
@@ -539,6 +587,16 @@ img {
     height: 52px;
     border-radius: 50%;
     background-color: #F4F0EC;
+}
+
+.blogs-item-link:hover {
+    transition: background-color 400ms ease-in-out;
+    background-color: #CDA274;
+}
+
+.blogs-item-link:hover .blogs-item-icon {
+    transition: fill 400ms ease-in-out;
+    fill: #F4F0EC;
 }
 
 .blogs-item-icon {
@@ -599,6 +657,11 @@ img {
     cursor: pointer;
 }
 
+.join-btn:hover {
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.2);
+}
+
 /* =========== Footer =========== */
 .footer {
     display: flex;
@@ -608,6 +671,10 @@ img {
 
 .social-links {
     margin-right: 84px;
+}
+
+.footer-logo {
+    width: 177px;
 }
 
 .social-links-text {
@@ -631,6 +698,11 @@ img {
     width: 25px;
     height: 25px;
     fill: #292F36;
+}
+
+.social-links-icon:hover {
+    transition: fill 400ms ease-in-out;
+    fill: #CDA274;
 }
 
 .pages {

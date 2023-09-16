@@ -14,43 +14,55 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Interno</title>
   </head>
   <body>
     <!-- Header -->
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container">
         <a href="./index.html"
-          ><img src="./images/icons/logo.svg" alt="logo"
+          ><img
+            class="header-logo-img"
+            src="./images/icons/logo.svg"
+            alt="logo"
         /></a>
         <nav>
           <ul class="header-list">
             <li class="header-list-item">
-              <a class="header-list-link" href="./index.html">Home</a>
+              <a data-goto=".body" class="header-list-link" href="#">Home</a>
             </li>
             <li class="header-list-item">
-              <a class="header-list-link" href="#about-us">About Us</a>
+              <a data-goto=".design-section" class="header-list-link" href="#"
+                >About Us</a
+              >
             </li>
             <li class="header-list-item">
-              <a class="header-list-link" href="#services">Services</a>
+              <a data-goto=".feature-section" class="header-list-link" href="#"
+                >Services</a
+              >
             </li>
             <li class="header-list-item">
-              <a class="header-list-link" href="#projects">Projects</a>
+              <a data-goto=".projects-section" class="header-list-link" href="#"
+                >Projects</a
+              >
             </li>
             <li class="header-list-item">
-              <a class="header-list-link" href="#contacts">Contact Us</a>
+              <a data-goto=".join-section" class="header-list-link" href="#"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
     <!-- Main -->
     <main>
       <!-- Hero -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-aos="zoom-in-right" data-aos-delay="200">
             Let's Create Your <br />
             Dream Interior
           </h1>
@@ -58,14 +70,16 @@
             The world needs innovators and problem solvers who turn <br />
             challenges into greater opportunities.
           </p>
-          <button type="button" class="hero-button">Get Started</button>
+          <button type="button" class="hero-button" data-aos="flip-up">
+            Get Started
+          </button>
         </div>
       </section>
       <!-- Advantages -->
       <div class="container">
-        <section class="feature-section" id="services">
+        <section class="feature-section">
           <ul class="feature-list">
-            <li class="feature-item">
+            <li class="feature-item" data-aos="fade-right">
               <h3 class="feature-title">Interior Design</h3>
               <p class="feature-text">
                 Enhancing the interior to achieve a healthier environment for
@@ -73,7 +87,7 @@
               </p>
               <a class="feature-link" href="">View More</a>
             </li>
-            <li class="feature-item">
+            <li class="feature-item" data-aos="fade-up">
               <h3 class="feature-title">Furniture</h3>
               <p class="feature-text">
                 Movable articles that are used to make a room or building
@@ -81,7 +95,7 @@
               </p>
               <a class="feature-link" href="">View More</a>
             </li>
-            <li class="feature-item">
+            <li class="feature-item" data-aos="fade-left">
               <h3 class="feature-title">Flooring</h3>
               <p class="feature-text">
                 Thin object any finished material applied over a floor structure
@@ -92,7 +106,7 @@
           </ul>
         </section>
       </div>
-      <!-- Desing -->
+      <!-- Design -->
       <div class="container">
         <section class="design-section">
           <div class="content">
@@ -122,15 +136,16 @@
           />
         </section>
       </div>
+
       <!-- Feedback -->
       <div class="container">
-        <section class="feedback-section" id="about-us">
+        <section class="feedback-section">
           <h2 class="feedback-title">
             What the People Thinks <br />
             About Interno
           </h2>
           <ul class="feedback-list">
-            <li class="feedback-item">
+            <li class="feedback-item" data-aos="zoom-in-down">
               <div class="feedback-user">
                 <img
                   class="feedback-img"
@@ -147,7 +162,7 @@
                 background & education.
               </p>
             </li>
-            <li class="feedback-item">
+            <li class="feedback-item" data-aos="zoom-in-down">
               <div class="feedback-user">
                 <img
                   class="feedback-img"
@@ -164,7 +179,7 @@
                 project’s.
               </p>
             </li>
-            <li class="feedback-item">
+            <li class="feedback-item" data-aos="zoom-in-down">
               <div class="feedback-user">
                 <img
                   class="feedback-img"
@@ -220,7 +235,7 @@
 
       <!-- Projects Section -->
       <div class="container">
-        <section class="projects-section" id="projects">
+        <section class="projects-section">
           <h2 class="projects-title">Recent Projects</h2>
           <p class="projects-text">
             With tools to make every part of your process more human and a
@@ -433,7 +448,7 @@
 
       <!-- Join Section -->
       <div class="container">
-        <section class="join-section" id="contacts">
+        <section class="join-section">
           <h2 class="join-title">Wanna join the interno?</h2>
           <p class="join-text">Contact Us & Get a Free Consultation</p>
           <button class="join-btn" type="button">Connect With Us</button>
@@ -445,7 +460,9 @@
     <div class="container">
       <footer class="footer">
         <div class="social-links">
-          <a href="#"><img src="./images/icons/logo.svg" alt="logo" /></a>
+          <a href="#"
+            ><img class="footer-logo" src="./images/icons/logo.svg" alt="logo"
+          /></a>
           <p class="social-links-text">
             We are the leading architect and interior design firm in the world.
           </p>
@@ -533,5 +550,13 @@
         Powered by <span class="footer-copyright-span">Webflow</span>
       </p>
     </footer>
+    <script src="./js/anchor-nav.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: true,
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>
