@@ -84,7 +84,7 @@ img {
     background: currentColor;
     transform: scale(0);
     transform-origin: center right;
-    transition: transform 300ms ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 
 .header-list-link:hover {
@@ -701,7 +701,7 @@ img {
 }
 
 .social-links-icon:hover {
-    transition: fill 400ms ease-in-out;
+    transition: fill 300ms ease-in-out;
     fill: #CDA274;
 }
 
